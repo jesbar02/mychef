@@ -1,6 +1,16 @@
 {
   "name": "startup",
+  "description": "",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
   "run_list": [
-    "recipe[base]"
-  ]
+    "recipe[base]",
+    "recipe[mychef-client]"
+  ],
+  "env_run_lists": {
+  }
 }

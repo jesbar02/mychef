@@ -1,6 +1,6 @@
 {
   "name": "startup",
-  "description": "",
+  "description": "set the initial configurations to a new node",
   "json_class": "Chef::Role",
   "default_attributes": {
   },
@@ -8,8 +8,9 @@
   },
   "chef_type": "role",
   "run_list": [
+    "recipe[my-users]",
     "recipe[base]",
-    "recipe[mychef-client]"
+    "recipe[my-chef-client]"
   ],
   "env_run_lists": {
   }

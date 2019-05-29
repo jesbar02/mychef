@@ -7,12 +7,12 @@
     "users"
   ],
   "uid": 1001,
-  "gid": 1001,
+  "gid": 33,
   "home": "/home/jhernandez",
   "shell": "/bin/bash",
   "ssh_keys": [
     "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBmlsky4H7CeTf+XZCeUpRx3mv/HoJDw7Q5lGq/EST0+7JPhvfeGC7m6PWqcc72YqssPhEFOxMenRXv8HKSlffwVKqD7HzEwon00zdDT0qeBMaGt0uRVn7DndH+cpe1lmCAk7xE3AiqX50nZoFeqf7Ca5T9fjKf1AyRVLgEnwHuoevkDKM4LD6ZMSopF0V1SVMemJxwIefY+1zg9+VeHrzfeAQNk7wVWGSxo5dVMUQOOS1GCBfcHi1xNp0Fs0zbHh7AEH1Q8BRKo1hjzNUvxImfVl+W/b27oBNF5tAfAjRaOtaH2hj+sVN2XAWzQ4TJiyCXa3KGMXpYsgQWCwIlYE7 jhernandez@jhernandezmbp16"
   ],
-  "platform_family":"debian",
-  "comment": "Jesus Hernandez"
+  "comment": "Jesus Hernandez",
+  "platform_family": "debian"
 }

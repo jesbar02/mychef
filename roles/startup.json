@@ -8,9 +8,9 @@
   },
   "chef_type": "role",
   "run_list": [
-    "recipe[my-users]",
     "recipe[base]",
-    "recipe[my-chef-client]"
+    "recipe[my-chef-client]",
+    "recipe[my-users]"
   ],
   "env_run_lists": {
   }

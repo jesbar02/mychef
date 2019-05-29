@@ -2,40 +2,19 @@
 # Cookbook:: my-users
 # Recipe:: default
 #
-# Copyright:: 2019, The Authors, All Rights Reserved.
+# Copyright:: 2009-2017, Chef Software, Inc.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
 
-#  search('users', 'platform_family:debian').each do |user_data|
-#    user user_data['id'] do
-#      comment user_data['comment']
-#      uid user_data['uid']
-#      gid user_data['gid']
-#      home user_data['home']
-#      shell user_data['shell']
-#      password user_data['password']
-#      action :create
-#      manage_home true
-#    end
-#  end
-
-users_manage 'users' do
-  data_bag 'users'
-  group_id 100
-  action [ :remove, :create ]
-end
-
-users_manage 'sysadmins' do
-  data_bag 'users'
-  group_id 55001
-  action [ :remove, :create ]
-end
-
-members = []
-search('users', 'platform_family:debian').each do |u|
-  members << u['id'] if u['groups'].include?('www-data') && !u['action'].eql?('remove')
-end
-
-group 'www-data' do
-  gid 33
-  members members
-  action :create
-end
+Chef::Log.warn('The default users recipe does nothing. See the readme for information on using the users resources')

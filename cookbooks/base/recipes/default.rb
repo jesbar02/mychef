@@ -9,3 +9,4 @@
 include_recipe 'base::motd'
 include_recipe 'base::setup'
 include_recipe 'ntp::default'
+include_recipe 'base::users'

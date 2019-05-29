@@ -2,8 +2,9 @@
   "name": "production",
   "description": "Code production running",
   "cookbook_versions": {
-        "base": "0.2.0",
-        "my-chef-client": "0.1.0"
+        "base": "0.2.1",
+        "my-chef-client": "0.1.0",
+        "my-users": "0.1.4"
   },
   "json_class": "Chef::Environment",
   "chef_type": "environment",
